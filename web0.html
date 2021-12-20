@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Home Page</title>
+        <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        table, th, td {
+          border:1px solid white;
+          border-collapse: collapse;
+          border-radius: 10px;
+          border-spacing: 30px;
+        }
+        th, td { 
+            background-color: lightskyblue;
+            border-radius: 10px;
+            border-style: dotted;
+            border-color: magenta;
+            padding: 15px;
+        }
+        tr:nth-child(even){
+            background-color: maroon;
+        }
+        tr:hover {background-color: #D6EEEE;}
+ 
+        .city{background-color: tomato;
+                color:white;
+                border: 2px solid black;
+                margin: 20px;
+                padding: 20px;
+        }
+    </style>
+
+    </head>
+    <body style="background-color:lightgoldenrodyellow;">
+
+        <h1>My First Heading</h1>
+        <p style="color:salmon;font-size: 20px;"> <b><i>Angel Ma is learning HTML markup language</i></b></p>
+        <a href="https://www.google.com" target="_blank">weblink</a>
+        <a href="mailto:vjiangcg@gmail.com">send email to patrick</a>
+        <a href="tel:6464069406">Call Angel </a>
+        <p><a href="web1.html" target="_blank" title="Go to Angel's Website">Angel's New Page </a></p>
+        <p>If your browser supports bi-directional override (bdo), the next line will be written from right to left (rtl):</p>
+            <bdo dir="rtl">This line will be written from right to left</bdo>
+
+        <p>
+            <picture>
+            <source media="min-width: 650px" srcset="img/img_car.jpeg">
+            <source media="min-width: 450px" srcset="img/img_girl.jpeg">
+            <img src="img/img_the_scream.jpeg" alt="the scream" title="Angel likes it a lot." style="width:max-content;">
+            </picture>
+        </p>
+    <!----------------Table Function----------------->    
+        <div style="background-color:black;">
+        <p>
+            <h2 style="color: lightseagreen;"> A basic HTML table </h2>
+            <table style="width: 100%;">
+                <caption style="color: white;">Basic Information</caption>
+                <tr>
+                    <th>Company</th>
+                    <th>Contact</th>
+                    <th>Country</th>
+                </tr>
+                <tr>
+                    <td>Alfreds Futterkiste</td>
+                    <td>Maria Anders</td>
+                    <td>Germany</td>
+                </tr>
+                <tr>
+                    <td>Centro Comercial Moctezuma</td>
+                    <td>Fancisco Chang</td>
+                    <td>Mexico</td>
+                </tr>
+            </table>
+           
+
+
+        </p></div>
+<!----Using Block-level to separate web sections-->
+        <div class="city">
+            <h2>London</h2>
+            <p><span style="border: 1px solid black;">L</span>ondon is the capital of England.</p>
+        </div> 
+            
+        <div class="city">
+            <h2>Paris</h2>
+            <p>Paris is the capital of France.</p>
+        </div>
+            
+        <div class="city">
+            <h2>Tokyo</h2>
+            <p>Tokyo is the capital of Japan.</p>
+        </div>
+
+<!----JavaScript I don't quite understand...-->
+        <div>
+            <h2>Use of The class Attribute in JavaScript</h2>
+            <p>Click the button to hide all elements with class name "city":</p>
+            <button onclick="myFunction()">Hide elements</button>
+            <h2 class="city">London</h2>
+            <p>London is the capital of England.</p>
+            
+            <h2 class="city">Paris</h2>
+            <p>Paris is the capital of France.</p>
+            
+            <h2 class="city">Tokyo</h2>
+            <p>Tokyo is the capital of Japan.</p>
+            <script>
+                function myFunction() {
+                  var x = document.getElementsByClassName("city");
+                  for (var i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                  }
+                }
+                </script>
+        </div>
+
+        <h2>Iframe - Target for a Link</h2>
+
+        <iframe src="web0.html" name="iframe_a" height="300px" width="100%" title="Iframe Example"></iframe>
+        <p><a href="web1.html" target="iframe_a">My First Page</a></p>
+
+    </body>
+</html>
