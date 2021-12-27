@@ -48,8 +48,8 @@
 
         <p>
             <picture>
-            <source media="min-width: 650px" srcset="img/img_car.jpeg">
-            <source media="min-width: 450px" srcset="img/img_girl.jpeg">
+            <source media="(max-width: 650px)" srcset="img/img_car.jpeg">
+            <source media="(max-width: 450px)" srcset="img/img_girl.jpeg">
             <img src="img/img_the_scream.jpeg" alt="the scream" title="Angel likes it a lot." style="width:max-content;">
             </picture>
         </p>
@@ -123,6 +123,24 @@
 
         <iframe src="web0.html" name="iframe_a" height="300px" width="100%" title="Iframe Example"></iframe>
         <p><a href="web1.html" target="iframe_a">My First Page</a></p>
+
+        <form action="/action_page.php">
+            <label for="fname">First Name:</label><br>
+            <input type="text" id="fname" name="fname" value="Huijie"><br>
+            <label for="lname">Last name</label><br>
+            <input type="text" id="lname" name="lname" value="Jiao"><br><br>
+            <input type="submit" value="Submit">
+            <p><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            <label for="vehicle1">I have a bike.</label>
+            <input type="radio" id="vehicle2" name="vehicle2" value="Car">
+            <label for="vehicle2">I have a car.</label>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+            <label for="vehicle3">I have a boat.</label>
+            <input type="submit" value="OK">
+            </p>
+            
+        </form>
+
 
     </body>
 </html>
