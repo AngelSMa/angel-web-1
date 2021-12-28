@@ -124,30 +124,65 @@
         <iframe src="web0.html" name="iframe_a" height="300px" width="100%" title="Iframe Example"></iframe>
         <p><a href="web1.html" target="iframe_a">My First Page</a></p>
 
+<!----HTML FORM SECTION---->
         <form autocomplete="on">
+            <fieldset>
+                <legend style="text-align:center">Personalia</legend>
             <label for="fname">First Name:</label><br>
             <input type="text" id="fname" name="fname" value="Huijie"><br>
             <label for="lname">Last name</label><br>
             <input type="text" id="lname" name="lname" value="Jiao"><br><br>
-            <input type="submit" value="Submit">
+            <input type="submit" value="Submit"></fieldset><br><br>
         
-            <p><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
             <label for="vehicle1">I have a bike.</label>
             <input type="radio" id="vehicle2" name="vehicle2" value="Car">
             <label for="vehicle2">I have a car.</label>
             <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
             <label for="vehicle3">I have a boat.</label>
-            <input type="button" value="OK">
-            </p>
-            <p><label for="cars">Choose a car:</label>
-            <select id="cars" name="cars">
+            <input type="button" value="OK"><br><br>
+            
+            <label for="cars">Choose a car:</label>
+            <select id="cars" name="cars" size="4" multiple>
                 <option value="volvo">volvo</option>
                 <option value="saab">Saab</option>
                 <option value="fiat">Fiat</option>
                 <option value="audi">Audi</option>
                 <option value="lamborghini" selected>Lamborghini</option>
-            </select></p>
-        </form>
+            </select><br>
+            <textarea name="message" rows="10" cols="30">Jay will buy a Birkin Bag for Angel.</textarea><br><br>
+            <input type="submit"><br><br>
+            <button type="button" onclick="alert('Hello World!')">Click Me!</button><br><br>
+
+            <h2>The datalist Element</h2>
+
+            <p>The datalist element specifies a list of pre-defined options for an input element.</p>
+
+            <input list="browsers" name="browser">
+            <datalist id="browsers">
+                <option value="Internet Explorer">
+                <option value="Firefox">
+                <option value="Chrome">
+                <option value="Opera">
+                <option value="Safari">
+            </datalist>
+            <input type="submit"><br><br>
+
+            </form><br>
+
+
+            <h2>The output Element</h2>
+            <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+                0
+            <input type="range" id="a" name="a" value="50">
+                100 + 
+            <input type="number" id="b" name="b" value="50">
+                =
+            <output name="x" for="a b"></output>
+            <br><br>
+            <input type="submit">
+            <input type="reset">
+            </form>
 
 
     </body>
