@@ -124,21 +124,29 @@
         <iframe src="web0.html" name="iframe_a" height="300px" width="100%" title="Iframe Example"></iframe>
         <p><a href="web1.html" target="iframe_a">My First Page</a></p>
 
-        <form action="/action_page.php">
+        <form autocomplete="on">
             <label for="fname">First Name:</label><br>
             <input type="text" id="fname" name="fname" value="Huijie"><br>
             <label for="lname">Last name</label><br>
             <input type="text" id="lname" name="lname" value="Jiao"><br><br>
             <input type="submit" value="Submit">
+        
             <p><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
             <label for="vehicle1">I have a bike.</label>
             <input type="radio" id="vehicle2" name="vehicle2" value="Car">
             <label for="vehicle2">I have a car.</label>
             <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
             <label for="vehicle3">I have a boat.</label>
-            <input type="submit" value="OK">
+            <input type="button" value="OK">
             </p>
-            
+            <p><label for="cars">Choose a car:</label>
+            <select id="cars" name="cars">
+                <option value="volvo">volvo</option>
+                <option value="saab">Saab</option>
+                <option value="fiat">Fiat</option>
+                <option value="audi">Audi</option>
+                <option value="lamborghini" selected>Lamborghini</option>
+            </select></p>
         </form>
 
 
